@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Item extends Model
 {
+
+    protected $fillable = ['name', 'price'];
     use HasFactory;
 
     public function image()
